@@ -1,0 +1,60 @@
+/* ปุ่มหัวใจ */
+.heart-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: pink;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    z-index: 1000;
+  }
+  
+  .heart-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ข้อความ Happy Birthday */
+  .birthday-message {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff1493;
+    font-family: 'Prompt', sans-serif;
+    display: none;
+    animation: fadeIn 2s ease-in-out;
+    z-index: 1000;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translate(-50%, -50%) scale(0.5);}
+    100% {opacity: 1; transform: translate(-50%, -50%) scale(1);}
+  }
+  
+  /* หัวใจลอย */
+  .floating-heart {
+    position: fixed;
+    color: red;
+    font-size: 24px;
+    animation: floatUp 3s ease-in-out forwards;
+    z-index: 999;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+  

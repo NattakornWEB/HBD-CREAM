@@ -1,0 +1,31 @@
+.memory-page {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .memory-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff0000;
+  }
+  
+  .gallery {
+    display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: auto;
+  grid-template-rows: repeat(3, auto); /* 3 แถวแนวตั้ง */
+  gap: 10px;
+  justify-content: center;
+  }
+  
+  .gallery img {
+    width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
